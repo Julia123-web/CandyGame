@@ -1,6 +1,6 @@
 # Candy Game Landing Page
 
-A promotional landing page for an exciting candy-themed game with PIN verification system.
+A promotional landing page for an exciting candy game with PIN verification system.
 
 ## Description
 
@@ -16,9 +16,8 @@ This is a landing page designed to promote a candy-themed game. Users enter thei
 
 ## Prerequisites
 
-- Node.js (v14 or higher)
-- npm (comes with Node.js)
-- Access to trigger-pin API endpoint
+- Node.js
+- npm
 
 ## Installation
 
@@ -36,31 +35,10 @@ To start the development server:
 npm run dev
 ```
 
-The landing page will be available at `http://localhost:5173` (or another port if 5173 is in use).
-
-## Building for Production
-
-To create a production build:
-```bash
-npm run build
-```
-
-The built files will be available in the `dist` directory.
-
 ## Technologies Used
-
+- React
 - TypeScript
 - Vite
 - HTML5
 - CSS3
 - Trigger-pin API integration
-
-## Project Structure
-
-- `/src` - Source code files
-- `/public` - Static assets
-- `/dist` - Production build (generated after building)
-
-## License
-
-This project is open source and available under the MIT License.
