@@ -1,0 +1,119 @@
+:root {
+  --primary-color: #E6D5FA;
+  --secondary-color: #8A2BE2;
+  --accent-color: #FFD700;
+  --text-color: black;
+  --background-color: #FDDDE9;
+  --error-color: #FF4444;
+  --success-color: #00C851;
+  --border-radius: 12px;
+  --spacing-unit: 8px;
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Baloo+2:wght@400;500;600;700;800&display=swap');
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Baloo 2', cursive;
+}
+
+body {
+  font-family: 'Baloo 2', cursive;
+  background-color: var(--background-color);
+  color: var(--text-color);
+  line-height: 1.6;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  margin: 0;
+  min-height: 100vh;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 200;
+}
+
+p, input, button {
+  font-family: 'Baloo 2', cursive;
+  font-weight: 500;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--primary-color);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--background-color);
+}
+
+/* Selection color */
+::selection {
+  background: var(--background-color);
+  color: black;
+}
+
+/* Placeholder styling */
+::placeholder {
+  color: #999;
+  opacity: 1;
+  font-family: 'Baloo 2', cursive;
+}
+
+/* Focus outline for accessibility */
+:focus {
+  outline: 3px solid rgba(230, 213, 250, 0.2);
+  outline-offset: 2px;
+}
+
+button {
+  cursor: pointer;
+  border: none;
+  outline: none;
+  padding: calc(var(--spacing-unit) * 1.5) calc(var(--spacing-unit) * 3);
+  border-radius: var(--border-radius);
+  font-weight: bold;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input {
+  width: 100%;
+  padding: calc(var(--spacing-unit) * 1.5);
+  border: 2px solid #E6D5FA;
+  border-radius: 20px;
+  font-size: 1rem;
+  transition: border-color 0.2s ease;
+}
+
+input:focus {
+  outline: none;
+  border-color: var(--primary-color);
+}
+
+.error {
+  color: var(--error-color);
+  font-size: 0.875rem;
+  margin-top: var(--spacing-unit);
+}
+
+/* Smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
